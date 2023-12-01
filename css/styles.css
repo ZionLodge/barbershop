@@ -176,3 +176,8 @@ ul {
   line-height: 185.714%;
   letter-spacing: 0.28px;
 }
+
+.services-and-prices-content {
+  /* TODO: replace with image background */
+  background-color: var(--dark-color);
+}
