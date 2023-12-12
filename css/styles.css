@@ -54,6 +54,12 @@ ul {
 }
 
 .hero-control-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+}
+
+.hero-control-button {
   background: none;
   font-size: 11px;
   font-style: normal;
@@ -64,11 +70,11 @@ ul {
   cursor: pointer;
 }
 
-.hero-control-buttons-dark {
+.hero-control-button-dark {
   color: var(--gray-color);
 }
 
-.hero-control-buttons-light {
+.hero-control-button-light {
   color: var(--white-color);
 }
 
@@ -261,4 +267,27 @@ ul {
 .services-and-prices-content {
   /* TODO: replace with image background */
   background-color: var(--dark-color);
+}
+
+.why-us-cards {
+  --card-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  max-width: calc(var(--card-width) * 2 + 30px);
+}
+
+.why-us-card {
+  flex-basis: var(--card-width);
+  height: 133px;
+  background-color: #f7f7f7;
+}
+
+.why-us-card-shifted {
+  margin-top: 30px;
+}
+
+.contact {
+  background-color: var(--dark-color);
+  color: var(--white-color);
 }
